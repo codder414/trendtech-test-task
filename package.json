@@ -6,7 +6,7 @@
   "scripts": {
     "build": "rimraf dist/ && tsc",
     "start": "node ./dist/server.js",
-    "start:dev": "ts-node ./src/server.ts",
+    "start:dev": "nodemon ./src/server.ts",
     "watch": "tsc -w"
   },
   "keywords": [],
