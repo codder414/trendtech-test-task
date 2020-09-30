@@ -38,7 +38,7 @@ export async function createApp(options: AppConfig) {
 	);
 	app.use(bodyParser.json());
 	app.get('/', (_, res) => {
-		res.json({ msg: `Welcome to ${packageJson.name}` });
+		res.json({ msg: `Welcome to HELL ${packageJson.name}` });
 	});
 
 	app.listen(options.port, options.host, () => {
