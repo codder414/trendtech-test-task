@@ -1,7 +1,7 @@
 {
-  "name": "template_typescript_project",
+  "name": "async-stuff",
   "version": "1.0.0",
-  "description": "Template description",
+  "description": "Async stuff like debounce and throttle",
   "main": "./dist/index.js",
   "scripts": {
     "build": "rimraf dist/ && tsc",
@@ -12,12 +12,24 @@
   "author": "nurik6@gmail.com",
   "license": "MIT",
   "devDependencies": {
+    "@commitlint/config-conventional": "^11.0.0",
     "@types/node": "^11.15.27",
+    "@types/pino": "^6.3.2",
+    "@typescript-eslint/eslint-plugin": "^4.3.0",
+    "@typescript-eslint/parser": "^4.3.0",
+    "commitlint": "^11.0.0",
+    "eslint-config-prettier": "^6.12.0",
+    "husky": "^4.3.0",
+    "jest": "^26.4.2",
+    "lint-staged": "^10.4.0",
+    "prettier": "^2.1.2",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^2.6.3",
-    "ts-node": "^8.10.2",
-    "tslint": "^5.20.1",
-    "typescript": "^3.9.7"
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "pino": "^6.6.1",
+    "pino-pretty": "^4.2.1"
+  }
 }
