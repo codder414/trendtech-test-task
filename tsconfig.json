@@ -19,21 +19,21 @@
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "declaration": true,
-    "outDir": "build",
-    "rootDir": ".",
+    "outDir": "dist",
+    "rootDir": "./src",
     "types": ["reflect-metadata", "jest", "node"],
-    "baseUrl": ".",
+    "baseUrl": "./src",
     "paths": {
       "src/*": ["src/*"]  // Relative to "baseUrl"
-    }
+    },
+    "resolveJsonModule": true
   },
   "include": [
     "src/**/*",
-    "examples/**/*",
     "__tests__/**/*"
   ],
   "exclude": [
     "node_modules",
-    "build"
+    "dist"
   ]
 }
