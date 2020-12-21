@@ -1,12 +1,10 @@
 {
-  "name": "async-stuff",
+  "name": "template_typescript_clean",
   "version": "1.0.0",
-  "description": "Async stuff like debounce and throttle",
+  "description": "Clean typescript boilerplate with common stuff",
   "main": "./dist/index.js",
   "scripts": {
     "build": "rimraf dist/ && tsc",
-    "start": "node ./dist/server.js",
-    "start:dev": "nodemon ./src/server.ts",
     "watch": "tsc -w",
     "cleanup": "rimraf dist node_modules"
   },
@@ -15,7 +13,6 @@
   "license": "MIT",
   "devDependencies": {
     "@commitlint/config-conventional": "^11.0.0",
-    "@types/express": "^4.17.8",
     "@types/node": "^11.15.27",
     "@types/pino": "^6.3.2",
     "@typescript-eslint/eslint-plugin": "^4.3.0",
@@ -27,7 +24,6 @@
     "husky": "^4.3.0",
     "jest": "^26.4.2",
     "lint-staged": "^10.4.0",
-    "nodemon": "^2.0.4",
     "prettier": "^2.1.2",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^2.6.3",
@@ -35,10 +31,7 @@
     "typescript": "^4.0.3"
   },
   "dependencies": {
-    "body-parser": "^1.19.0",
     "envalid": "^6.0.2",
-    "express": "^4.17.1",
-    "express-pino-logger": "^5.0.0",
     "pino": "^6.6.1",
     "pino-pretty": "^4.2.1"
   }
