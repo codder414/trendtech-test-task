@@ -1,3 +1,1 @@
-import { log } from './logger';
-
-log.info('Sample app');
+// import { log } from './logger';
