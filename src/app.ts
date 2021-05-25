@@ -1,6 +1,6 @@
 export function run(nums: number[]): string {
-	if (nums.length < 2) {
-		return `${nums}`;
+	if (nums.length < 3) {
+		return nums.join();
 	}
 
 	const result: number[][] = [[nums[0]]];
@@ -22,7 +22,9 @@ export function run(nums: number[]): string {
 
 	return result
 		.reduce((result, range) => {
-			if (range.length > 1) {
+			if (range.length === 2) {
+				result += `${range[0]},${range[1]},`;
+			} else if (range.length > 1) {
 				result += `${range[0]}-${range[range.length - 1]},`;
 			} else {
 				result += `${range[0]},`;
