@@ -14,8 +14,13 @@ const data = [
 	{ input: [1, 3, 5, 7, 9, 11], output: '1,3,5,7,9,11' }
 ];
 
-test('main fn', () => {
-	data.forEach(({ input, output }) => {
-		expect(run(input)).toBe(output);
+test('shouild return promise', async () => {
+	expect(run(data[0].input)).toHaveProperty('then');
+	expect(run(data[0].input)).toHaveProperty('catch');
+});
+
+test('should pass all testcases', async () => {
+	data.forEach(async ({ input, output }) => {
+		expect(await run(input)).toBe(output);
 	});
 });
