@@ -9,7 +9,9 @@
 
 
 ## Usage:
-```typescript run(ar: Array<number>): Promise<string>```
+```typescript 
+run(ar: Array<number>): Promise<string>
+```
 ```typescript
 // Don't forget to resolve promise before using actual value!
 await run([1, 2, 3, 4, 5, 6, 7, 8]) //'1-8'
